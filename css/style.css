@@ -269,7 +269,12 @@ a:focus {
           align-items: center;
   text-align: center;
 }
-
+.hero_area .carousel-row{
+  height: 100% !important;
+  padding-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 .slider_section #customCarousel1 {
   width: 100%;
   position: unset;
@@ -328,13 +333,42 @@ a:focus {
   height: 25px;
   border-color: #ffffff;
 }
-
+/* news section */
+.news-section{
+  /* border: 1px solid lightgray; */
+  border-radius: 15px;
+  color:  white;
+  background-color: rgba(255, 255, 255, 0.245);  
+  backdrop-filter: blur(5px); 
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  height: 90%;
+  padding: 20px;
+}
+.news-heading{
+  font-size: 1.8rem;
+  margin: 10px;
+}
+.news-section .marquee{
+  color: white;
+  margin-top: 20px;
+}
+.news{
+  color: white;
+  display: flex;
+}
+.news:hover{
+  color: #1c1c1c;
+}
 .about_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
+.tutor-img{
+	width: 270px;
+	height: 270px;
+	border-radius: 50%;
+}
 .about_section .img-box img {
   max-width: 100%;
 }
@@ -376,27 +410,36 @@ a:focus {
   border-radius: 500px;
   overflow: hidden;
 }
+.course_section .card{
+  max-width: 300px;
+  margin: 20px;
+  -webkit-box-shadow: 4px 7px 7px -3px rgba(0,0,0,0.26);
+-moz-box-shadow: 4px 7px 7px -3px rgba(0,0,0,0.26);
+box-shadow: 4px 7px 7px -3px rgba(0,0,0,0.26);
+}
 
-.course_section .box .img-box img {
+.course_section .card .card-img img {
   width: 100%;
+  height: 200px;
 }
 
 .course_section .box .detail-box {
   margin-top: 25px;
 }
 
-.course_section .box .detail-box h3 {
+.course_section .card .detail-box h3 {
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-.course_section .box .detail-box p {
+.course_section .card .detail-box p {
   color: #999;
   margin-top: 10px;
 }
 
-.course_section .box .detail-box a {
+.course_section .card .detail-box a {
   display: inline-block;
-  padding: 12px 45px;
+  padding: 12px 15px;
   background-color: #d93c9d;
   color: #ffffff;
   border-radius: 30px;
